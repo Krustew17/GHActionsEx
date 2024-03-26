@@ -34,7 +34,7 @@ jobs:
         needs: build-test
         steps:
             - name: Deploy to Production
-              uses: johnbeynon/render-deploy-action@v.0.0.8
+              uses: johnbeynon/render-deploy-action@v0.0.8
               with:
                   service-id: ${{ secrets.SERVICE_ID }}
                   service-url: ${{ secrets.RENDER_TOKEN }}
